@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+failed_upload.pkl
+debug_upload.py
+pickle_dump.txt
+repro_pickle.py
+test_*.py
+inspect_pickle.py
+performance_report.json
+mfps_summary.json
+*.joblib
+!mfps_model.joblib
