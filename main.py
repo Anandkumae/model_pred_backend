@@ -219,7 +219,7 @@ async def predict_upload(file: UploadFile = File(...)):
         # INVESTIGATION LAYER: Log shapes and types before analysis
         try:
             print("--- PREDICTION INVESTIGATION ---")
-            print(f"DEBUG: Model Type: {type(model)}")
+            print(f"DEBUG: Model Type: {type(internal_model)}")
             print(f"DEBUG: X_train shape: {getattr(model_info['X_train'], 'shape', 'N/A')}")
             print(f"DEBUG: X_test shape: {getattr(model_info['X_test'], 'shape', 'N/A')}")
             print(f"DEBUG: y_train shape: {getattr(model_info['y_train'], 'shape', 'N/A')}")
